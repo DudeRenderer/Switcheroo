@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\packages\Microsoft.International.Converters.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -59,6 +62,7 @@
     <Compile Include="Matchers\IMatcher.cs" />
     <Compile Include="Matchers\IndividualCharactersMatcher.cs" />
     <Compile Include="Matchers\MatchResult.cs" />
+    <Compile Include="Matchers\PinyinInitialsMatcher.cs" />
     <Compile Include="Matchers\SignificantCharactersMatcher.cs" />
     <Compile Include="Matchers\StartsWithMatcher.cs" />
     <Compile Include="Matchers\StringPart.cs" />
@@ -73,6 +77,9 @@
       <Project>{fbd3ec1e-47e2-4d2d-81c9-d6506125a09a}</Project>
       <Name>ManagedWinapi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

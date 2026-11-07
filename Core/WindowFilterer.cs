@@ -78,12 +78,14 @@ namespace Switcheroo.Core
             var containsMatcher = new ContainsMatcher();
             var significantCharactersMatcher = new SignificantCharactersMatcher();
             var individualCharactersMatcher = new IndividualCharactersMatcher();
+            var pinyinInitialsMatcher = new PinyinInitialsMatcher();
 
             var results = new List<MatchResult>
             {
                 startsWithMatcher.Evaluate(title, filterText),
                 significantCharactersMatcher.Evaluate(title, filterText),
                 containsMatcher.Evaluate(title, filterText),
+                pinyinInitialsMatcher.Evaluate(title, filterText),
                 individualCharactersMatcher.Evaluate(title, filterText)
             };
 

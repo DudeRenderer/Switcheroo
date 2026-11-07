@@ -34,6 +34,13 @@ Launch Explorer                | `Alt + E`         | Opens a new File Explorer w
 Launch current process         | `Alt + N`         | Launches a new instance of the currently selected window's process.
 Anonymize window titles        | `Alt + P`         | Toggles anonymization of window titles for privacy during screen sharing or screenshots.
 
+### Pinyin initials search
+
+Search Chinese window and application titles using pinyin initials, without switching input methods.
+For example, type `ol`, `olz`, or `olzd` to find “欧陆字典”. Initials are case-insensitive,
+can be combined with English text in a title, and support multiple readings of a character.
+Matching Chinese characters are highlighted in the results.
+
 ### Mouse Usage
 
 - Double click a window to switch to it. (Configurable in _Options_ if single click is also possible.)
